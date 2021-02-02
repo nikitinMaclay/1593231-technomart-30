@@ -87,6 +87,9 @@
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 .catalog-main-content{
@@ -95,15 +98,25 @@
   font-size: 13px;
   line-height: 18px;
 }
-
+ul {
+  list-style: none;
+}
 .main-header {
   background: url("../img/other-img/top-background.png") rgba(0, 0, 0, 0.0001);
+  margin-bottom: 59px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 .main-section-customer {
   background: var(--basic-darkblue);
   color: var(--basic-white);
 }
-
+.customer-navigation {
+  display: grid;
+  grid-template-columns: 130px min-content min-content min-content min-content;
+}
 .main-logo {
 background: var(--basic-light-red);
 }
@@ -490,3 +503,9 @@ text-transform: uppercase;
   .catalog-switch-button:active {
     background: var(--basic-light-red);
   }
+
+.page {
+  height: 100%
+  }
+
+
