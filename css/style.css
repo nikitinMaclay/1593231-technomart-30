@@ -107,7 +107,7 @@
   width: 940px;
   margin: 0 auto;
 }
-ul {
+.special-ul {
   list-style: none;
 }
 
@@ -136,11 +136,6 @@ ul {
   grid-template-columns: 130px 1fr;
   width: 940px;
   margin: 0 auto;
-}
-
-.customer-navigation{
-justify-self: end;
-
 }
 
 .customer-navigation-list{
