@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
   <link rel="icon" href="favicon.ico">
@@ -13,37 +13,39 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
-    <h1 class>Техномарт</h1>
+  <header class="main-header catalog-main-header">
+    <h1 class="special-title">Техномарт</h1>
     <section class="main-section-customer">
-      <h2>Главная</h2>
-      <a href="" class="main-logo">
-        <img src="img/other-img/logo-technomart.svg" alt="" width="108" height="18">
-      </a>
-      <nav class="customer-navigation">
-        <ul class="customer-navigation-list">
-          <li class="customer-list-item">
-            <form>
-              <label>
-                <p class="searching">Поиск:</p>
-                <input type='text' name='searching' id='searching-field'>
-              </label>
-            </form>
-          </li>
-          <li class="customer-list-item customer-list-item-active">
-            <a href="" class="content-link customer-content-link">Закладки:0</a>
-          </li>
-          <li class="customer-list-item">
-            <a href="" class="content-link customer-content-link">Корзина:0</a>
-          </li>
-          <li class="customer-list-item"><a href="" class="section-customer-button"
-              class="content-link customer-content-link">Оформить
-              заказ</a></li>
-        </ul>
-      </nav>
+      <h2 class="special-title">Главная</h2>
+      <div class="header-special-navigation">
+        <a href="" class="main-logo">
+          <img src="img/other-img/logo-technomart.svg" alt="" width="108" height="18">
+        </a>
+        <nav class="customer-navigation">
+          <ul class="customer-navigation-list">
+            <li class="customer-list-item">
+              <form>
+                <label>
+                  <p class="searching">Поиск:</p>
+                  <input type='text' name='searching' id='searching-field'>
+                </label>
+              </form>
+            </li>
+            <li class="customer-list-item customer-list-item-active">
+              <a href="" class="content-link customer-content-link">Закладки:0</a>
+            </li>
+            <li class="customer-list-item">
+              <a href="" class="content-link customer-content-link">Корзина:0</a>
+            </li>
+            <li class="customer-list-item"><a href="" class="section-customer-button"
+                class="content-link customer-content-link">Оформить
+                заказ</a></li>
+          </ul>
+        </nav>
+      </div>
     </section>
-    <section class="main-section-contact">
-      <h2>Информация для связи</h2>
+    <section class="main-section-contacts">
+      <h2 class="special-title">Информация для связи</h2>
       <p class="shop-description">Интернет-магазин <br>
         строительных материалов <br>
         и инструментов для ремонта</p>
@@ -64,7 +66,7 @@
       </ul>
     </section>
     <section>
-      <h2>Навигация</h2>
+      <h2 class="special-title">Навигация</h2>
       <nav class="site-navigation">
         <ul class="site-navigation-list">
           <li class="site-navigation-item">
@@ -92,10 +94,10 @@
       </nav>
     </section>
   </header>
-  <main>
+  <main class="catalog-page">
     <section class="catalog-main-content">
-      <nav>
-        <ul class="catalog-nav">
+      <nav class="catalog-nav">
+        <ul class="catalog-nav-list">
           <li>
             <a href="index.html" class="catalog-nav-link"></a>
           </li>
@@ -110,13 +112,13 @@
           </li>
         </ul>
       </nav>
-      <div class="popular">
+      <div class="popular catalog-popular">
         <p class="content-title catalog-content-title">Перфораторы</p>
       </div>
       <section>
-        <h2 class="catalog-filter">Фильтр:</h2>
+        <h2 class="catalog-filter special-zeroing">Фильтр:</h2>
         <section class="catalog-filter catalog-filter-cost">
-          <h3 class="filter-title">Цена</h3>
+          <h3 class="filter-title special-zeroing">Цена</h3>
           <div class="input-range"></div>
         </section>
         <section>
@@ -165,10 +167,10 @@
           </form>
         </section>
       </section>
-      <section>
-        <h2>список товаров</h2>
+      <section class="catalog-goods">
+        <h2 class="special-title">список товаров</h2>
         <article class="catalog-filter">
-          <p>Сортировка:</p>
+          <p class="special-zeroing">Сортировка:</p>
           <ul class="catalog-sorting-list">
             <li>
               <a href="" class="catalog-sorting-link">по цене</a>
@@ -181,9 +183,11 @@
             </li>
           </ul>
         </article>
-        <ul>
+        <ul class="catalog-goods-list">
           <li>
-            <div><img src="img/bosch-tools/bosch-6000.jpg" alt="" width="144" height="128"></div>
+            <div>
+              <img src="img/bosch-tools/bosch-6000.jpg" alt="" width="144" height="128">
+            </div>
             <h3 class='goods-naming'>Перфоратор bosch bfg 6000</h3>
             <p class="goods-cost">30500 Р.</p>
             <a href="" class="cost-button">25500 Р.</a>
@@ -264,7 +268,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="catalog-about-perforators">
         <h2 class="content-title catalog-content-title content-title-special">Пара слов о перфораторах</h2>
         <p class="content-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
           долбления отверстий в
@@ -279,71 +283,80 @@
       </section>
     </section>
   </main>
-  <footer class="main-footer">
-    <section>
-      <h2>Полезные ссылки</h2>
-      <a href="" class="main-logo">
-        <img src="img/other-img/logo-technomart.svg" alt="" width="108" height="18">
-      </a>
-      <aside>
-        <p class="contact-description">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78125550555" class="footer-contact-phone">+7 (812) 555-05-55</a>
-      </aside>
-
-      <ul>
-        <li>
-          <a href="" class="content-link">Компания</a>
-        </li>
-        <li>
-          <a href="" class="content-link">Новости</a>
-        </li>
-        <li>
-          <a href="" class="content-link">Каталог</a>
-        </li>
-        <li>
-          <a href="" class="content-link">Доставка</a>
-        </li>
-        <li>
-          <a href="" class="content-link">Контакты</a>
-        </li>
-      </ul>
-      <ul class="footer-nav">
-        <li>
-          <a href="" class="content-link">Материалы</a>
-        </li>
-        <li>
-          <a href="" class="content-link">Техника</a>
-        </li>
-        <li>
-          <a href="" class="content-link">Инструмент</a>
-        </li>
-        <li>
-          <a href="" class="content-link">Спецпредложения</a>
-        </li>
-      </ul>
+  <footer class="main-footer catalog-footer">
+    <section class="footer-special-inf">
+      <h2 class="special-title">Полезные ссылки</h2>
+      <div class="main-footer-address">
+        <a href="" class="main-logo">
+          <img src="img/other-img/logo-technomart.svg" alt="" width="108" height="18">
+        </a>
+        <aside>
+          <p class="contact-description contact-description-special">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+78125550555" class="footer-contact-phone">+7 (812) 555-05-55</a>
+          </a>
+      </div>
+      <div class="helpful-links-container">
+        <ul class="helpful-links-list">
+          <li>
+            <a href="" class="helpful-links-item content-link">Компания</a>
+          </li>
+          <li>
+            <a href="" class="helpful-links-item content-link">Новости</a>
+          </li>
+          <li>
+            <a href="" class="helpful-links-item content-link">Каталог</a>
+          </li>
+          <li>
+            <a href="" class="helpful-links-item content-link">Доставка</a>
+          </li>
+          <li>
+            <a href="" class="helpful-links-item content-link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-nav">
+          <li>
+            <a href="" class="content-link">Материалы</a>
+          </li>
+          <li>
+            <a href="" class="content-link">Техника</a>
+          </li>
+          <li>
+            <a href="" class="content-link">Инструмент</a>
+          </li>
+          <li>
+            <a href="" class="content-link">Спецпредложения</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="footer-contacts">
-      <h2>Для связи с нами:</h2>
-      <p class="footer-content-text">© 2010–2019 Компания «Техномарт» <br>
-        Все права защищены</p>
-      <ul>
-        <li class="footer-icon">
-          <a href="">ВКонтакте</a>
-        </li>
-        <li class="footer-icon">
-          <a href="">Фейсбук</a>
-        </li>
-        <li class="footer-icon">
-          <a href="">Инстаграм</a>
-        </li>
-      </ul>
-      <p class="footer-content-text">Обратная связь:<br>
-        <a href="" class="footer-email-link footer-contact-link">mail@htmlacademy.ru</a>
-      </p>
-      <p class="footer-content-text">Разработано —<br>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"
-          class="footer-site-link footer-contact-link">htmlacademy.ru</a>
-      </p>
+      <div class="footer-contacts-container">
+        <h2 class="special-title">Для связи с нами:</h2>
+        <div class="content-text-container">
+          <p class="footer-content-text">© 2010–2019 Компания «Техномарт»<br>
+            Все права защищены</p>
+        </div>
+        <ul class="footer-icon-list">
+          <li class="footer-icon-item">
+            <a href="" class="footer-content-text">ВКонтакте</a>
+          </li>
+          <li class="footer-icon-item">
+            <a href="" class="footer-content-text">Фейсбук</a>
+          </li>
+          <li class="footer-icon-item">
+            <a href="" class="footer-content-text">Инстаграм</a>
+          </li>
+        </ul>
+        <div class="footer-main-contacts">
+          <p class="footer-content-text">Обратная связь:<br>
+            <a href="" class="footer-email-link footer-contact-link">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer-content-text">Разработано —<br>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+              class="footer-site-link footer-contact-link">htmlacademy.ru</a>
+          </p>
+        </div>
+      </div>
     </section>
   </footer>
 </body>

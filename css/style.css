@@ -102,6 +102,10 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  width: 940px;
+  margin: 0 auto;
 }
 ul {
   list-style: none;
@@ -121,6 +125,10 @@ ul {
 .main-section-customer {
   background: var(--basic-darkblue);
   color: var(--basic-white);
+}
+
+.catalog-main-header{
+  margin-bottom: 21px;
 }
 
 .header-special-navigation {
@@ -150,9 +158,11 @@ justify-self: end;
   height: 42px;
 }
 
-.main-section-contact {
+.main-section-contacts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 940px;
+  margin: 0 auto
 }
 
 .content-link,
@@ -565,6 +575,10 @@ grid-column: 3/4;
   background: var(--basic-light-red);
 }
 
+.catalog-nav {
+  grid-column: 1/-1;
+}
+
 .catalog-nav-link {
   color: var(--basic-black);
   font-size: 13px;
@@ -620,6 +634,7 @@ grid-column: 3/4;
 
 .content-title-special {
   color: var(--basic-black);
+  margin: 0px;
 }
 
 .contact-user-item {
@@ -655,11 +670,42 @@ grid-column: 3/4;
   color: var(--basic-light-red);
   }
 
-  .catalog-switch-button:active {
+.catalog-switch-button:active {
     background: var(--basic-light-red);
   }
 
-  .popular-goods-container {
+.popular-goods-container {
     width: 184px;
     height: 164px;
   }
+
+.catalog-popular {
+    height: min-content;
+    grid-column: 1/-1;
+  }
+
+.catalog-goods{
+    margin-bottom: 59px;
+  }
+
+.catalog-goods-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+.catalog-about-perforators {
+    grid-column: 1/-1;
+    margin: 0 auto 68px auto;
+  }
+
+.special-zeroing {
+    margin: 0px;;
+  }
+.catalog-footer{
+    margin-top: 0px
+  }
+
+.catalog-nav-list{
+  padding: 0px;
+  margin: 0px;
+}
