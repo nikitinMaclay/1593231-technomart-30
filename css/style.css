@@ -181,6 +181,7 @@
   background: var(--basic-light-red);
   max-height: 18px;
   padding: 12px 56px 12px 56px;
+  box-shadow: 0 5px 0 0 var(--basic-dark-red);
 }
 
 .main-section-contacts {
@@ -284,11 +285,26 @@
   background: url(../img/icons/icon-cart.svg) no-repeat;
   position: absolute;
   top: 13px;
+  left: 27px;
+  opacity: 0.3;
+}
+
+.catalog-cart::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(../img/icons/icon-cart.svg) no-repeat;
+  position: absolute;
+  top: 13px;
   left: 12px;
   opacity: 0.3;
 }
 
 .cart:hover::before{
+  opacity: 1;
+}
+
+.catalog-cart:hover::before{
   opacity: 1;
 }
 
@@ -368,7 +384,7 @@
 
 .contact-inf {
   width: max-content;
-  margin-right: 69px;
+  margin-right: 63px;
   text-align: center;
 }
 
@@ -571,6 +587,16 @@ background: var(--basic-yellow);
   right: 42px;
 }
 
+.goods-cards-item-1::before{
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../img/icons/icon-new.svg);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 .goods-cards-item-2::after{
   content: "";
   width: 75px;
@@ -724,11 +750,23 @@ background: var(--basic-yellow);
   margin: 0 auto;
 }
 .popular-goods-item{
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 318px;
   border: 1px solid var(--basic-border-color);
   box-sizing: border-box;
+}
+
+.popular-goods-item-2::before,
+.popular-goods-item-4::before{
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../img/icons/icon-new.svg);
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .bosch-item-1{
@@ -833,7 +871,7 @@ background: var(--basic-yellow);
 }
 
 .cost-button {
-  width: max-content;
+  width: 101px;
   padding: 10px 44px 10px 32px;
   margin-right: 32px;
   margin-bottom: 21px;
@@ -846,6 +884,8 @@ background: var(--basic-yellow);
   color: var(--basic-white);
   background: var(--basic-light-red);
   text-decoration: none;
+  background-image: linear-gradient(225deg, white 25%, transparent 25%), linear-gradient(315deg, white 25%, transparent 25%);
+  z-index: -2;
 }
 
 .additionals-container{
@@ -959,6 +999,8 @@ background: var(--basic-yellow);
 
 .services-button-1{
   padding: 13.5px 139px 17.5px 22px;
+  background: var(--basic-white);
+  color: var(--basic-darkblue-2);
 }
 
 .services-button-2{
@@ -1195,6 +1237,7 @@ grid-column: 3/4;
   padding: 20px 41px;
   margin-bottom: 20px;
   background: var(--basic-light-red);
+  box-shadow: 0 5px 0 0 var(--basic-dark-red);
 }
 
 .footer-logo-img:active {
@@ -1249,6 +1292,10 @@ grid-column: 3/4;
 .additionals-button:active {
   background: var(--basic-white);
   color: var(--basic-darkblue-2);
+}
+
+.services-button-1:hover{
+  background: var(--basic-white);
 }
 
 .content-link:hover {
@@ -1349,7 +1396,7 @@ grid-column: 3/4;
 }
 
 .catalog-goods-filter:active::after{
-  background: url(../img/icons/icon-red-down-dir.svg);
+  background: url(../img/icons/icon-red-down-dir.sv);
 }
 
 .catalog-sorting-list{
@@ -1753,7 +1800,7 @@ grid-column: 3/4;
 }
 
 .catalog-cost-button{
-  width: max-content;
+  width: 101px;
   padding: 10px 44px 10px 32px;
   margin-right: 32px;
   margin-bottom: 21px;
@@ -1764,6 +1811,8 @@ grid-column: 3/4;
   color: var(--basic-white);
   background: var(--basic-light-red);
   text-decoration: none;
+  background-image: linear-gradient(225deg, white 25%, transparent 25%), linear-gradient(315deg, white 25%, transparent 25%);
+  z-index: -2;
 }
 
 .catalog-about-perforators-wrapper{
