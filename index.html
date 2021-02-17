@@ -270,13 +270,13 @@
           Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="special-ul about-company-list">
-          <li class="about-company-item">
+          <li class="about-company-item about-company-item-1">
             <p class="about-company-item-p">Деловые линии</p>
           </li>
-          <li class="about-company-item">
+          <li class="about-company-item about-company-item-2">
             <p class="about-company-item-p">Автотрейдинг</p>
           </li>
-          <li class="about-company-item">
+          <li class="about-company-item about-company-item-3">
             <p class="about-company-item-p">ЖелДорЭкспедиция</p>
           </li>
         </ul>
@@ -298,9 +298,7 @@
               height="158" class="contacts-img">
           </a>
         </figure>
-        <div class="contacts-button-container">
-          <a class="button contacts-button">Заблудились? напишите нам!</a>
-        </div>
+        <a class="button contacts-button" href="#">Заблудились? напишите нам!</a>
       </section>
     </section>
   </main>
@@ -310,7 +308,8 @@
       <div class="main-footer-address">
         <div class="footer-logo">
           <a href="">
-            <img src="img/other-img/logo-technomart.svg" alt="" width="138" height="23" class="logo-img footer-logo-img">
+            <img src="img/other-img/logo-technomart.svg" alt="" width="138" height="23"
+              class="logo-img footer-logo-img">
           </a>
         </div>
         <aside class="footer-block-contacts">
@@ -402,6 +401,40 @@
       </div>
     </section>
   </footer>
+  <div class="modals-wrapper">
+    <section class="modal-write-us">
+      <h2 class="visually-hidden">Написать нам</h2>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="about-user-wrapper">
+          <div class="name-wrapper">
+            <label class="your-name-text" for="name-field">Ваше имя:</label>
+            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" class="name-input">
+          </div>
+          <div class="email-wrapper">
+            <label class="your-email-text" for="email-field">Ваш e-mail:</label>
+            <input type="text" name="email" id="email-field" placeholder="email@example.com" class="email-input">
+          </div>
+        </div>
+        <div class="letter-field-wrapper">
+          <label class="your-letter-text" for="letter-field">Текст письма:</label>
+          <textarea type="text" name="email" id="letter-field" placeholder="В свободной форме" class="textarea-input"
+            rows="5"></textarea>
+        </div>
+        <div class="modal-button-wrapper">
+          <button type="submit" class="write-us-button">Отправить</button>
+        </div>
+        <button type="button" class="modal-closing-button contact-closing-button" aria-label="Закрыть"></button>
+    </section>
+    <section class="modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716070592!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1613471438346!5m2!1sru!2skz"
+        width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <button type="button" class="modal-closing-button map-closing-button" aria-label="Закрыть"></button>
+    </section>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
