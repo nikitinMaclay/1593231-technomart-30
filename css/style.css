@@ -95,6 +95,7 @@
 --basic-special-white: #f1f1f1;
 --basic-extralight-grey: #F4F4F4;
 --basic-drop-shadow: rgba(0, 0, 0, 0.15);
+--basic-special-dark-green: #367315;
 }
 
 .page {
@@ -1451,7 +1452,7 @@ grid-column: 3/4;
 }
 
 .catalog-goods-filter:active::after{
-  background: url(../img/icons/icon-red-down-dir.sv);
+  background: url(../img/icons/icon-red-down-dir.svg);
 }
 
 .catalog-sorting-list{
@@ -1805,12 +1806,107 @@ grid-column: 3/4;
   }
 
 .catalog-goods-item{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 316px;
   border: 1px solid var(--basic-border-color);
   box-sizing: border-box;
+  background: var(--basic-white);
+}
+
+.catalog-goods-item-new{
+  position: relative;
+}
+
+.catalog-goods-item-new::before{
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../img/icons/icon-new.svg);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+
+.action-button-wrapper{
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 34px;
+  left: 38px;
+}
+
+.buying-button{
+  position: relative;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background: var(--basic-light-bright-green);
+  padding: 10px 39px 8px 55px;
+  border-bottom: 3px solid var(--basic-dark-green);
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.buying-button::before{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: url(../img/icons/icon-cart.svg);
+  top: 10px;
+  left: 31px;
+  opacity: 0.3;
+}
+
+.buying-button:hover{
+  background: var(--basic-bright-green);
+}
+
+.buying-button:active{
+  background: var(--basic-dark-green);
+  border-color: var(--basic-special-dark-green);
+}
+
+.in-bookmarks-button{
+  font-family: "Cuprum";
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--basic-darkblue-2);
+  text-transform: uppercase;
+  background: var(--basic-white);
+  padding: 8px 33px 6px 30px;
+  border: 3px solid var(--basic-dark-green);
+  border-radius: 2px;
+}
+
+.in-bookmarks-button:hover{
+  border-color: var(--basic-darkblue-2);
+}
+
+.in-bookmarks-button:active{
+  opacity: 0.5;
+}
+
+.catalog-goods-item:hover{
+  filter: drop-shadow(0px 4px 20px var(--basic-drop-shadow));
+}
+
+.catalog-goods-item:hover .catalog-goods-img{
+  visibility: hidden;
+}
+
+.catalog-goods-item:hover .action-button-wrapper{
+  visibility: visible;
 }
 
 .catalog-goods-naming{
@@ -2187,7 +2283,90 @@ grid-column: 3/4;
   right: 10px
 }
 
+.modal-good-message{
+  display: none;
+  position: fixed;
+  top: 109px;
+  left: 391px;
+  border-top: 7px var(--basic-light-red) solid;
+  background-color: var(--basic-white);
+  filter: drop-shadow(0px 4px 20px var(--basic-drop-shadow));
+  }
+
+.good-message-form{
+  padding: 0px;
+  margin: 0px;
+}
+
+.success-adding-title{
+  position: relative;
+  font-family: "Cuprum";
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  padding: 67px 100px 67px 99px;
+  justify-content: center;
+  margin: 0;
+}
+
+.success-adding-title::before{
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 48px;
+  left: 80px;
+  background: url(../img/icons/icon-mark.svg);
+}
+
+.modal-good-wrapper{
+  background: var(--basic-special-white);
+  display: flex;
+  padding: 37px 112px 37px 114px;
+}
+
+.good-checkout-button{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background: var(--basic-light-red);
+  text-decoration: none;
+  padding: 11px 46px 9px 47px;
+}
+
+.good-continue-button{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  text-decoration: none;
+  background: var(--basic-white);
+  padding: 11px 31px 9px 32px;
+  margin-left: 10px;
+}
+
+.good-checkout-button:hover{
+  background: var(--basic-red)
+}
+
+.good-checkout-button:active{
+  background: var(--basic-dark-red)
+}
+
+.good-continue-button:active{
+  opacity: 0.6;
+}
+
+.good-continue-button:hover{
+  box-shadow: 0 0 20px -8px var(--basic-black);
+}
+
+.catalog-modal-closing-button{
+  right: 11px;
+  top: 12px;
+}
+
 .modal--show{
   display: block;
 }
-
