@@ -78,6 +78,7 @@ let goodMessagePopup = document.querySelector('.modal-good-message');
 let goodsList = document.querySelector('.popular-goods-list');
 let goodCloseButton = goodMessagePopup.querySelector('.modal-closing-button');
 let goodContinueButton = goodMessagePopup.querySelector('.good-continue-button');
+let cart = document.querySelector('.cart')
 goodsList.onclick = function(event) {
   let indexBuyButton = event.target.closest('.buying-button');
   event.preventDefault();
@@ -86,7 +87,6 @@ goodsList.onclick = function(event) {
   if (!goodsList.contains(indexBuyButton)) return;
 
   goodMessagePopup.classList.add('modal--show');
-
 };
 
 goodCloseButton.onclick = function (evt) {

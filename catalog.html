@@ -28,8 +28,8 @@
               <form class="main-form">
                 <input type='text' name='searching' id='searching-field' class="text-field special-text-field"
                   placeholder="Поиск:">
-                  <div class="for-icon"></div>
-                  <button type="submit" class="visually-hidden"></button>
+                <div class="for-icon"></div>
+                <button type="submit" class="visually-hidden"></button>
               </form>
             </li>
             <li class="customer-list-item customer-list-item-active bookmark catalog-bookmark">
@@ -120,11 +120,11 @@
         </ul>
       </nav>
       <div class="popular catalog-popular">
-        <p class="content-title catalog-content-title">Перфораторы</p>
+        <p class="content-title catalog-content-title" tabindex="0">Перфораторы</p>
       </div>
       <section>
         <div class="catalog-filter-wrapper">
-          <h2 class="catalog-filter special-zeroing">Фильтр:</h2>
+          <h2 class="catalog-filter special-zeroing" tabindex="0">Фильтр:</h2>
         </div>
         <section class="catalog-filter catalog-filter-cost">
           <h2 class="visually-hidden">Контроль цены</h2>
@@ -160,36 +160,36 @@
           </form>
         </section>
         <section class="filter-checkboxes">
-          <h3 class="filter-title filter-title-2">производители:</h3>
+          <h3 class="filter-title filter-title-2" tabindex="0">производители:</h3>
           <ul class="catalog-choice-list special-ul">
             <li class="catalog-choice-item">
               <input type="checkbox" name="checkbox-1" id="check-of-bosch" checked
                 class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-bosch" class="label">bosch</label>
+              <label for="check-of-bosch" class="label" tabindex="0">bosch</label>
             </li>
 
             <li class="catalog-choice-item">
               <input type="checkbox" name="checkbox-2" id="check-of-interschol"
                 class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-interschol" class="label">Интерскол</label>
+              <label for="check-of-interschol" class="label" tabindex="0">Интерскол</label>
             </li>
 
             <li class="catalog-choice-item">
               <input type="checkbox" name="checkbox-3" id="check-of-makita" checked
                 class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-makita" class="label">makita</label>
+              <label for="check-of-makita" class="label" tabindex="0">makita</label>
             </li>
 
             <li class="catalog-choice-item">
               <input type="checkbox" name="checkbox-4" id="check-of-dewalt"
                 class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-dewalt" class="label">Dewalt</label>
+              <label for="check-of-dewalt" class="label" tabindex="0">Dewalt</label>
             </li>
 
             <li class="catalog-choice-item">
               <input type="checkbox" name="checkbox-5" id="check-of-hitachi"
                 class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-hitachi" class="label">Hitachi</label>
+              <label for="check-of-hitachi" class="label" tabindex="0">Hitachi</label>
             </li>
           </ul>
         </section>
@@ -198,15 +198,15 @@
           <ul class="catalog-choice-list radio-choice-list special-ul">
             <li class="catalog-choice-item catalog-radio-item">
               <input type="radio" name="radio-1" id="choice-of-accum" class="catalog-choice-radio visually-hidden">
-              <label for="choice-of-accum" class="label-radio">Аккумуляторные</label>
+              <label for="choice-of-accum" class="label-radio" tabindex="0">Аккумуляторные</label>
             </li>
             <li class="catalog-choice-item catalog-radio-item">
               <input type="radio" name="radio-1" id="choice-of-amperage" class="catalog-choice-radio visually-hidden">
-              <label for="choice-of-amperage" class="label-radio">Сетевые</label>
+              <label for="choice-of-amperage" class="label-radio" tabindex="0">Сетевые</label>
             </li>
           </ul>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <a class="catalog-choice-button">Показать</a>
+            <a class="catalog-choice-button" tabindex="0">Показать</a>
             <button type="submit" class="visually-hidden"></button>
           </form>
         </section>
@@ -346,16 +346,17 @@
         </ul>
         <ul class="catalog-switch-list special-ul">
           <li class="catalog-switch-item">
-            <a href="" class="catalog-switch-button switch-button-active">1</a>
+            <a href="" class="catalog-switch-button switch-button-active" aria-label="Первая страница">1</a>
           </li>
           <li class="catalog-switch-item">
-            <a href="" class="catalog-switch-button">2</a>
+            <a href="" class="catalog-switch-button" aria-label="Вторая страница">2</a>
           </li>
           <li class="catalog-switch-item">
-            <a href="" class="catalog-switch-button">3</a>
+            <a href="" class="catalog-switch-button" aria-label="Третья страница">3</a>
           </li>
           <li class="catalog-switch-item catalog-switch-item-next">
-            <a href="" class="catalog-switch-button catalog-switch-button-next">следующая</a>
+            <a href="" class="catalog-switch-button catalog-switch-button-next"
+              aria-label="Следующая страница">следующая</a>
           </li>
         </ul>
       </section>

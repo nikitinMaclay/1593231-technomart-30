@@ -602,6 +602,7 @@ background: var(--basic-yellow);
   flex-direction: column;
   justify-content: space-between;
   background: url("../img/other-img/content-decorate-img.jpg") no-repeat center;
+  background-color: var(--basic-scale-color);
   grid-column: 1/3;
   grid-row: 2/4;
 }
@@ -1316,7 +1317,7 @@ grid-column: 3/4;
   margin-bottom: 37px;
 }
 .footer-content-text{
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;;
   font-size: 16px;
   line-height: 18px;
 }
@@ -1959,7 +1960,7 @@ grid-column: 3/4;
 
 .buying-button{
   position: relative;
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1995,7 +1996,7 @@ grid-column: 3/4;
 }
 
 .in-bookmarks-button{
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;;
   font-size: 14px;
   text-decoration: none;
   color: var(--basic-darkblue-2);
@@ -2460,7 +2461,7 @@ grid-column: 3/4;
 
 .success-adding-title{
   position: relative;
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;;
   font-size: 24px;
   line-height: 30px;
   display: flex;
@@ -2579,4 +2580,8 @@ grid-column: 3/4;
   80% {
     transform: translateX(10px);
   }
+}
+
+.buying-active{
+  background-color: var(--basic-light-red);
 }
