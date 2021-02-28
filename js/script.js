@@ -87,6 +87,8 @@ goodsList.onclick = function(event) {
   if (!goodsList.contains(indexBuyButton)) return;
 
   goodMessagePopup.classList.add('modal--show');
+
+  cart.classList.add('buying-active');
 };
 
 goodCloseButton.onclick = function (evt) {
