@@ -26,6 +26,7 @@
           <ul class="customer-navigation-list special-ul">
             <li class="customer-list-item">
               <form class="main-form">
+                <label for="searching-field" class="visually-hidden">Поиск:</label>
                 <input type='text' name='searching' id='searching-field' class="text-field special-text-field"
                   placeholder="Поиск:">
                 <div class="for-icon"></div>
@@ -119,12 +120,41 @@
           </div>
         </li>
         <li class="goods-cards-item goods-cards-item-4">
-          <div class="perforator-container">
-            <h3 class="good-title good-title-perforators">Перфораторы</h3>
-            <p class="good-title-add">Настоящие мужские игрушки</p>
-          </div>
-          <div class="open-catalog-container">
+          <div class="slide-1-wrapper is-showing">
+            <div class="perforator-container">
+              <h3 class="good-title good-title-perforators">Перфораторы</h3>
+              <p class="good-title-add">Настоящие мужские игрушки</p>
+            </div>
             <a href="catalog.html" class="button goods-cards-button">Открыть каталог</a>
+            <button type="button" class="slider-back"><img src="img/icons/icon-left.svg" alt="пролистнуть слайдер назад"
+                width="22" height="40"></button>
+            <button type="button" class="slider-next"><img src="img/icons/icon-right.svg"
+                alt="пролистнуть слайдер вперед" width="22" height="40"></button>
+            <button type="button" class="slide-1" aria-label="первый слайд неактивен">
+              <div class="slide"></div>
+            </button>
+            <button type="button" class="slide-2" aria-label="второй слайд активен">
+              <div class="slide slide-active"></div>
+            </button>
+          </div>
+          <div class="slide-2-wrapper">
+            <div class="perforator-container">
+              <h3 class="good-title good-title-perforators">Дрели</h3>
+              <p class="good-title-add">Соседям на радость!</p>
+            </div>
+            <a href="catalog.html" class="button goods-cards-button">Открыть каталог</a>
+            <button type="button" class="slider-back">
+              <img src="img/icons/icon-left.svg" alt="пролистнуть слайдер назад" width="22" height="40">
+            </button>
+            <button type="button" class="slider-next">
+              <img src="img/icons/icon-right.svg" alt="пролистнуть слайдер вперед" width="22" height="40">
+            </button>
+            <button type="button" class="slide-1" aria-label="первый слайд активен">
+              <div class="slide slide-active"></div>
+            </button>
+            <button type="button" class="slide-2" aria-label="второй слайд неактивен">
+              <div class="slide"></div>
+            </button>
           </div>
         </li>
         <li class="goods-cards-item goods-cards-item-5">
@@ -151,7 +181,8 @@
       </article>
       <ul class="popular-goods-list special-ul">
         <li class="popular-goods-item popular-goods-item-1">
-          <img src="img/bosch-tools/bosch-9000.jpg" alt="" width="184" height="164" class="bosch-item-img bosch-item-1">
+          <img src="img/bosch-tools/bosch-9000.jpg" alt="картинка с дрелью 9000-модели" width="184" height="164"
+            class="bosch-item-img bosch-item-1">
           <h3 class='goods-naming'>Перфоратор BOSCH BFG 9000</h3>
           <p class="goods-cost">32500 Р.</p>
           <a href="" class="cost-button">25500 Р.</a>
@@ -161,7 +192,8 @@
           </div>
         </li>
         <li class="popular-goods-item popular-goods-item-2">
-          <img src="img/bosch-tools/bosch-3000.jpg" alt="" width="127" height="112" class="bosch-item-img bosch-item-2">
+          <img src="img/bosch-tools/bosch-3000.jpg" alt="картинка с дрелью 3000-модели" width="127" height="112"
+            class="bosch-item-img bosch-item-2">
           <h3 class='goods-naming goods-naming-special'>Перфоратор BOSCH BFG 3000</h3>
           <p class="goods-cost">22500 Р.</p>
           <a href="" class="cost-button">15500 Р.</a>
@@ -171,7 +203,8 @@
           </div>
         </li>
         <li class="popular-goods-item popular-goods-item-3">
-          <img src="img/bosch-tools/bosch-6000.jpg" alt="" width="144" height="128" class="bosch-item-img bosch-item-3">
+          <img src="img/bosch-tools/bosch-6000.jpg" alt="картинка с дрелью 6000-модели" width="144" height="128"
+            class="bosch-item-img bosch-item-3">
           <h3 class='goods-naming'>Перфоратор BOSCH BFG 6000</h3>
           <p class="goods-cost">30500 Р.</p>
           <a href="" class="cost-button">25500 Р.</a>
@@ -181,7 +214,8 @@
           </div>
         </li>
         <li class="popular-goods-item popular-goods-item-4">
-          <img src="img/bosch-tools/bosch-2000.jpg" alt="" width="127" height="112" class="bosch-item-img bosch-item-4">
+          <img src="img/bosch-tools/bosch-2000.jpg" alt="картинка с дрелью 2000-модели" width="127" height="112"
+            class="bosch-item-img bosch-item-4">
           <h3 class='goods-naming goods-naming-special'>Перфоратор BOSCH BFG 2000</h3>
           <p class="goods-cost">22500 Р.</p>
           <a href="" class="cost-button">12500 Р.</a>
@@ -207,13 +241,13 @@
         </li>
         <li class="manufacturer-item">
           <a href="">
-            <img src="img/companies/Makita-company.png" alt="Компания Makita" width="123" height="40"
+            <img src="img/companies/makita-company.png" alt="Компания Makita" width="123" height="40"
               class="manufacturer-img-2">
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="">
-            <img src="img/companies/DeWALT-company.png" alt="Компания DeWALT" width="146" height="44"
+            <img src="img/companies/dewalt-company.png" alt="Компания DeWALT" width="146" height="44"
               class="manufacturer-img-3">
           </a>
         </li>
@@ -225,25 +259,25 @@
         </li>
         <li class="manufacturer-item">
           <a href="">
-            <img src="img/companies/Hitachi-company.png" alt="Компания Hitachi" width="169" height="31"
+            <img src="img/companies/hitachi-company.png" alt="Компания Hitachi" width="169" height="31"
               class="manufacturer-img-5">
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="">
-            <img src="img/companies/LG-company.png" alt="Компания LG" width="121" height="73"
+            <img src="img/companies/lg-company.png" alt="Компания LG" width="121" height="73"
               class="manufacturer-img-6">
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="">
-            <img src="img/companies/AEG-company.png" alt="Компания AEG" width="151" height="96"
+            <img src="img/companies/aeg-company.png" alt="Компания AEG" width="151" height="96"
               class="manufacturer-img-7">
           </a>
         </li>
         <li class="manufacturer-item">
           <a href="">
-            <img src="img/companies/Metabo-company.png" alt="Компания Metabo" width="204" height="69"
+            <img src="img/companies/metabo-company.png" alt="Компания Metabo" width="204" height="69"
               class="manufacturer-img-8">
           </a>
         </li>
@@ -318,7 +352,7 @@
               height="158" class="contacts-img">
           </a>
         </figure>
-        <a class="button contacts-button" href="#">Заблудились? напишите нам!</a>
+        <a class="button contacts-button" href="form.html">Заблудились? напишите нам!</a>
       </section>
     </section>
   </main>

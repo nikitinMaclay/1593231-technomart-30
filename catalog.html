@@ -26,6 +26,7 @@
           <ul class="customer-navigation-list special-ul">
             <li class="customer-list-item">
               <form class="main-form">
+                <label for="searching-field" class="visually-hidden">Поиск:</label>
                 <input type='text' name='searching' id='searching-field' class="text-field special-text-field"
                   placeholder="Поиск:">
                 <div class="for-icon"></div>
@@ -126,9 +127,9 @@
         <div class="catalog-filter-wrapper">
           <h2 class="catalog-filter special-zeroing" tabindex="0">Фильтр:</h2>
         </div>
-        <section class="catalog-filter catalog-filter-cost">
-          <h2 class="visually-hidden">Контроль цены</h2>
-          <form method="get" action="https://echo.htmlacademy.ru">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <section class="catalog-filter catalog-filter-cost">
+            <h2 class="visually-hidden">Контроль цены</h2>
             <fieldset class="filter-item">
               <legend>Цена:</legend>
               <div class="range-filter">
@@ -141,10 +142,10 @@
                   </div>
                   <div class="toggle toggle-min" tabindex="0" style="
                       left: 9%
-                    "></div>
+                    " aria-label="назначить минимальную цену"></div>
                   <div class="toggle toggle-max" tabindex="0" style="
                       left: 73%
-                    "></div>
+                    " aria-label="назначить максимальную цену"></div>
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
@@ -156,60 +157,57 @@
                 </div>
               </div>
             </fieldset>
-            <button type="submit" class="visually-hidden"></button>
-          </form>
-        </section>
-        <section class="filter-checkboxes">
-          <h3 class="filter-title filter-title-2" tabindex="0">производители:</h3>
-          <ul class="catalog-choice-list special-ul">
-            <li class="catalog-choice-item">
-              <input type="checkbox" name="checkbox-1" id="check-of-bosch" checked
-                class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-bosch" class="label" tabindex="0">bosch</label>
-            </li>
+          </section>
+          <section class="filter-checkboxes">
+            <h3 class="filter-title filter-title-2" tabindex="0">производители:</h3>
+            <ul class="catalog-choice-list special-ul">
+              <li class="catalog-choice-item">
+                <input type="checkbox" name="checkbox-1" id="check-of-bosch" checked
+                  class="catalog-choice-checkbox visually-hidden">
+                <label for="check-of-bosch" class="label" tabindex="0">bosch</label>
+              </li>
 
-            <li class="catalog-choice-item">
-              <input type="checkbox" name="checkbox-2" id="check-of-interschol"
-                class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-interschol" class="label" tabindex="0">Интерскол</label>
-            </li>
+              <li class="catalog-choice-item">
+                <input type="checkbox" name="checkbox-2" id="check-of-interschol"
+                  class="catalog-choice-checkbox visually-hidden" disabled>
+                <label for="check-of-interschol" class="label" tabindex="0">Интерскол</label>
+              </li>
 
-            <li class="catalog-choice-item">
-              <input type="checkbox" name="checkbox-3" id="check-of-makita" checked
-                class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-makita" class="label" tabindex="0">makita</label>
-            </li>
+              <li class="catalog-choice-item">
+                <input type="checkbox" name="checkbox-3" id="check-of-makita" checked
+                  class="catalog-choice-checkbox visually-hidden">
+                <label for="check-of-makita" class="label" tabindex="0">makita</label>
+              </li>
 
-            <li class="catalog-choice-item">
-              <input type="checkbox" name="checkbox-4" id="check-of-dewalt"
-                class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-dewalt" class="label" tabindex="0">Dewalt</label>
-            </li>
+              <li class="catalog-choice-item">
+                <input type="checkbox" name="checkbox-4" id="check-of-dewalt"
+                  class="catalog-choice-checkbox visually-hidden">
+                <label for="check-of-dewalt" class="label" tabindex="0">Dewalt</label>
+              </li>
 
-            <li class="catalog-choice-item">
-              <input type="checkbox" name="checkbox-5" id="check-of-hitachi"
-                class="catalog-choice-checkbox visually-hidden">
-              <label for="check-of-hitachi" class="label" tabindex="0">Hitachi</label>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2 class="filter-title filter-title-charge">Питание:</h2>
-          <ul class="catalog-choice-list radio-choice-list special-ul">
-            <li class="catalog-choice-item catalog-radio-item">
-              <input type="radio" name="radio-1" id="choice-of-accum" class="catalog-choice-radio visually-hidden">
-              <label for="choice-of-accum" class="label-radio" tabindex="0">Аккумуляторные</label>
-            </li>
-            <li class="catalog-choice-item catalog-radio-item">
-              <input type="radio" name="radio-1" id="choice-of-amperage" class="catalog-choice-radio visually-hidden">
-              <label for="choice-of-amperage" class="label-radio" tabindex="0">Сетевые</label>
-            </li>
-          </ul>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <a class="catalog-choice-button" tabindex="0">Показать</a>
-            <button type="submit" class="visually-hidden"></button>
-          </form>
-        </section>
+              <li class="catalog-choice-item">
+                <input type="checkbox" name="checkbox-5" id="check-of-hitachi"
+                  class="catalog-choice-checkbox visually-hidden">
+                <label for="check-of-hitachi" class="label" tabindex="0">Hitachi</label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="filter-title filter-title-charge">Питание:</h2>
+            <ul class="catalog-choice-list radio-choice-list special-ul">
+              <li class="catalog-choice-item catalog-radio-item">
+                <input type="radio" name="radio-1" id="choice-of-accum" class="catalog-choice-radio visually-hidden"
+                  disabled>
+                <label for="choice-of-accum" class="label-radio" tabindex="0">Аккумуляторные</label>
+              </li>
+              <li class="catalog-choice-item catalog-radio-item">
+                <input type="radio" name="radio-1" id="choice-of-amperage" class="catalog-choice-radio visually-hidden">
+                <label for="choice-of-amperage" class="label-radio" tabindex="0">Сетевые</label>
+              </li>
+            </ul>
+            <button class="catalog-choice-button" tabindex="0">Показать</button>
+          </section>
+        </form>
       </section>
       <section class="catalog-goods">
         <h2 class="visually-hidden">список товаров</h2>
@@ -239,7 +237,7 @@
         <ul class="catalog-goods-list special-ul">
           <li class="catalog-goods-item">
             <div class="catalog-goods-img">
-              <img src="img/bosch-tools/bosch-6000.jpg" alt="" width="144" height="128">
+              <img src="img/bosch-tools/bosch-6000.jpg" alt="картинка с дрелью 6000-модели" width="144" height="128">
             </div>
             <h3 class='catalog-goods-naming'>Перфоратор BOSCH BFG 6000</h3>
             <p class="catalog-goods-cost">30500 Р.</p>
@@ -251,7 +249,7 @@
           </li>
           <li class="catalog-goods-item">
             <div class="catalog-goods-img">
-              <img src="img/bosch-tools/bosch-6000.jpg" alt="" width="144" height="128">
+              <img src="img/bosch-tools/bosch-6000.jpg" alt="картинка с дрелью 6000-модели" width="144" height="128">
             </div>
             <h3 class='catalog-goods-naming'>Перфоратор BOSCH BFG 6000</h3>
             <p class="catalog-goods-cost">30500 Р.</p>
@@ -263,7 +261,7 @@
           </li>
           <li class="catalog-goods-item catalog-goods-item-new">
             <div class="catalog-goods-img">
-              <img src="img/bosch-tools/bosch-6000.jpg" alt="" width="144" height="128">
+              <img src="img/bosch-tools/bosch-6000.jpg" alt="картинка с дрелью 6000-модели" width="144" height="128">
             </div>
             <h3 class='catalog-goods-naming'>Перфоратор BOSCH BFG 6000</h3>
             <p class="catalog-goods-cost">30500 Р.</p>
@@ -275,7 +273,7 @@
           </li>
           <li class="catalog-goods-item catalog-goods-item-new">
             <div class="catalog-goods-img goods-img-3000">
-              <img src="img/bosch-tools/bosch-3000.jpg" alt="" width="127" height="112">
+              <img src="img/bosch-tools/bosch-3000.jpg" alt="картинка с дрелью 3000-модели" width="127" height="112">
             </div>
             <h3 class="catalog-goods-naming catalog-goods-naming-3000">Перфоратор BOSCH BFG 3000</h3>
             <p class="catalog-goods-cost">22500 Р.</p>
@@ -287,7 +285,7 @@
           </li>
           <li class="catalog-goods-item">
             <div class="catalog-goods-img">
-              <img src="img/bosch-tools/bosch-6000.jpg" alt="" width="144" height="128">
+              <img src="img/bosch-tools/bosch-6000.jpg" alt="картинка с дрелью 6000-модели" width="144" height="128">
             </div>
             <h3 class="catalog-goods-naming">Перфоратор BOSCH BFG 6000</h3>
             <p class="catalog-goods-cost">30500 Р.</p>
@@ -299,7 +297,7 @@
           </li>
           <li class="catalog-goods-item catalog-goods-item-new">
             <div class="catalog-goods-img goods-img-2000">
-              <img src="img/bosch-tools/bosch-2000.jpg" alt="" width="127" height="112">
+              <img src="img/bosch-tools/bosch-2000.jpg" alt="картинка с дрелью 2000-модели" width="127" height="112">
             </div>
             <h3 class="catalog-goods-naming catalog-goods-naming-2000">Перфоратор BOSCH BFG 2000</h3>
             <a href="" class="catalog-cost-button cost-button-2000">12500 Р.</a>
@@ -310,7 +308,7 @@
           </li>
           <li class="catalog-goods-item catalog-goods-item-new">
             <div class="catalog-goods-img goods-img-3000">
-              <img src="img/bosch-tools/bosch-3000.jpg" alt="" width="127" height="112">
+              <img src="img/bosch-tools/bosch-3000.jpg" alt="картинка с дрелью 3000-модели" width="127" height="112">
             </div>
             <h3 class="catalog-goods-naming catalog-goods-naming-3000">Перфоратор BOSCH BFG 3000</h3>
             <p class="catalog-goods-cost">22500 Р.</p>
@@ -322,7 +320,7 @@
           </li>
           <li class="catalog-goods-item">
             <div class="catalog-goods-img">
-              <img src="img/bosch-tools/bosch-6000.jpg" alt="" width="144" height="128">
+              <img src="img/bosch-tools/bosch-6000.jpg" alt="картинка с дрелью 6000-модели" width="144" height="128">
             </div>
             <h3 class="catalog-goods-naming">Перфоратор BOSCH BFG 6000</h3>
             <p class="catalog-goods-cost">30500 Р.</p>
@@ -334,7 +332,7 @@
           </li>
           <li class="catalog-goods-item catalog-goods-item-new">
             <div class="catalog-goods-img goods-img-2000">
-              <img src="img/bosch-tools/bosch-2000.jpg" alt="" width="127" height="112">
+              <img src="img/bosch-tools/bosch-2000.jpg" alt="картинка с дрелью 2000-модели" width="127" height="112">
             </div>
             <h3 class="catalog-goods-naming catalog-goods-naming-2000">Перфоратор BOSCH BFG 2000</h3>
             <a href="" class="catalog-cost-button  cost-button-2000">12500 Р.</a>

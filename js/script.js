@@ -101,3 +101,17 @@ goodContinueButton.onclick = function (event) {
   event.preventDefault();
   goodMessagePopup.classList.remove('modal--show');
 };
+
+let firstSlide = document.querySelector('.slide-1-wrapper');
+let secondSlide = document.querySelector('.slide-2-wrapper');
+let firstBackButton = firstSlide.querySelector('.slider-back');
+let secondNextButton = secondSlide.querySelector('.slider-next')
+firstBackButton.addEventListener("click", function () {
+  secondSlide.classList.add('is-showing');
+  firstSlide.classList.remove('is-showing');
+});
+
+secondNextButton.addEventListener("click", function () {
+  secondSlide.classList.remove('is-showing');
+  firstSlide.classList.add('is-showing');
+});

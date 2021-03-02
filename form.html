@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+</head>
+<body>
+<section class="modal-write-us modal-write-us-page">
+  <h2 class="visually-hidden">Написать нам</h2>
+  <form class="contact-form contact-form-special" action="https://echo.htmlacademy.ru" method="post">
+    <div class="about-user-wrapper">
+      <div class="name-wrapper">
+        <label class="your-name-text" for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" class="name-input">
+      </div>
+      <div class="email-wrapper">
+        <label class="your-email-text" for="email-field">Ваш e-mail:</label>
+        <input type="text" name="email" id="email-field" placeholder="email@example.com" class="email-input">
+      </div>
+    </div>
+    <div class="letter-field-wrapper">
+      <label class="your-letter-text" for="letter-field">Текст письма:</label>
+      <textarea name="email" id="letter-field" placeholder="В свободной форме" class="textarea-input"
+        rows="5"></textarea>
+    </div>
+    <div class="modal-button-wrapper">
+      <button type="submit" class="write-us-button">Отправить</button>
+    </div>
+    <button type="button" class="modal-closing-button" aria-label="Закрыть"></button>
+  </form>
+</section>
+</body>
