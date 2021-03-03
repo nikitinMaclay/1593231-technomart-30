@@ -2368,7 +2368,7 @@ grid-column: 3/4;
   position: relative;
   left: 0;
   border-top: none;
-  top: 99px;
+  top: -20px;
 }
 
 .name-wrapper{
